@@ -29,17 +29,15 @@ public class BatteryCheck {
 	}
 	public boolean checkSocOk() {
 		if(!checkLimitRange(LOWER_LIMIT_SOC, UPPER_LIMIT_SOC, soc))
-		{
-			//soc out of range
+		{	//soc out of range
 			return false;
 		}	
 		return true;
 	}
 	public boolean checkChargeRateOk() {
 		if(checkCharge(MAX_CHARGE_RATE, chargeRate).equals("high"))
-		{
-			//Charge Rate out of range
-            return false;
+		{	//Charge Rate out of range
+            		return false;
 		}
 		return true;
 	}

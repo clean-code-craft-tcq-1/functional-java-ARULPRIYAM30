@@ -9,7 +9,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
@@ -19,4 +19,4 @@ jobs:
     - name: Build
       run: javac vitals/BMSDriver.java
     - name: Verify
-      run: java -ea -classpath . vitals.Main
+      run: java -ea -classpath . vitals.BMSDriver

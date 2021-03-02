@@ -6,7 +6,6 @@ public class BMSDriver {
         return testBattery.isBatteryOk();
     }
     public static void main(String[] args) {
-       
         assert(batteryIsOk(25 , 15, 0.9f) == false);
         assert(batteryIsOk(25 , 65, 0.9f) == false);
         assert(batteryIsOk(50, 65, 0.7f) == false);

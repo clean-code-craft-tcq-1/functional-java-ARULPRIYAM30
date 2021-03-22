@@ -16,6 +16,6 @@ jobs:
       with:
         java-version: 1.8
     - name: Build
-      run: javac vitals/BatteryCheck.java
+      run: javac vitals/BatteryManageSystem.java
     - name: Verify
-      run: java -ea -classpath . vitals.BatteryCheck
+      run: java -ea -classpath . vitals.BatteryManageSystem

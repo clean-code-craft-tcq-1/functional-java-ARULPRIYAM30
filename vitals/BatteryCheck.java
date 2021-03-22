@@ -10,7 +10,6 @@ public class BatteryCheck {
 	float temperature;
 	float soc;
 	float chargeRate;
-
 	public BatteryCheck(float temperature, float soc, float chargeRate) {
 		this.temperature = temperature;
 		this.soc = soc;
